@@ -8,9 +8,7 @@ export default class Cl_vTienda {
 
     this.btAgregar.onclick = () => controlador.mostrarVistaCliente();
   }
-  reportar(salida, numero, ingreso) {
-    salida.innerHTML += `<br>El vuelo ${numero} tiene un ingreso de ${ingreso}`;
-  }
+
   mostrar() {
     this.vista.hidden = false;
   }
@@ -29,15 +27,9 @@ export default class Cl_vTienda {
         <th>${cedula}</th>
         <th>${codigo}</th>
         <th>${cantidad}</th>
-        <th>${montoAPagar.toFixed(2)}</th>
+        <th> $ ${montoAPagar.toFixed(2)}</th>
         </tr>`;
     this.lbArtMayor.innerHTML = artMayor;
-    this.lbAcTotal.innerHTML = acTotal.toFixed(2);
+    this.lbAcTotal.innerHTML = "$" + acTotal.toFixed(2);
   }
-/*   leerDatos() {
-    let precioA = prompt("Precio A");
-    let precioB = prompt("Precio B");
-    let precioC = prompt("Precio C");
-    return { precioA, precioB, precioC };
-  } */
 }
