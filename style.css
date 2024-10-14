@@ -1,39 +1,50 @@
 
- 
- table,
-  th,
-  td {
-    border: 1px solid black;
-    text-align: center;
-  }
-  th,td{
-    padding: 10px;
-  }
-  input {
-    display: block;
-    margin-bottom: 20px;
-  }
-  section {
-    font-family: 'Courier New', Courier, monospace;
-    border: 1px solid black;
-    padding: 20px;
-    margin: 20px;
-
-  }
-
-  h3{
-    font-size: xx-large;
-  }
-  h5{
-    font-size: medium;
-  }
+table,
+th,
+td {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(81, 81, 116);
+  color: aliceblue;
+}
+th,td{
+  padding: 10px;
   
-  /*Css*/
+}
+input {
+  display: block;
+  margin-bottom: 20px;
+}
+section {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid black;
+  padding: 20px;
 
-  section{
-    width: 50%;
-    margin-left: 25%;
-    background-color: rgb(211, 211, 211);
-    border-radius: 20px;
-    box-shadow: -1px 11px 20px 0px;
-  }
+}
+
+h3{
+  font-size: xx-large;
+}
+h5{
+  font-size: medium;
+}
+
+/*Css*/
+section{
+  width: 50vw;
+  min-height: 50vh;       
+  margin: 20vh auto;
+  background-color: rgb(240, 255, 253);
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+button{
+  border-radius: 10px;
+  font-weight: 1000;
+  padding: 10px 20px;
+  background-color: rgb(85, 85, 126);
+  color: aliceblue;
+}
